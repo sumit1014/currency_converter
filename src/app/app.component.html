@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="card text-center">
+    <div class="card-header">
+      Currency Converter
+    </div>
+    <div class="card-body">  
+    <div class="row justify-content-center g-4">
+      <div class="col-4">
+        <select class="form-select border-black" aria-label="Default select example"  [(ngModel)]="selectedFromCurrency">
+          <option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <select class="form-select border-black" aria-label="Default select example" [(ngModel)]="selectedToCurrency">
+          <option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <label for="floatingInput">Amount</label>
+        <input class=" form-control w-25 m-auto border-black" type="number" [(ngModel)]="amount" (input)="convertCurrency()"/>
+      </div>
+      <div class="col-12">
+        <p class="result">Result : {{convertedAmount}}</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

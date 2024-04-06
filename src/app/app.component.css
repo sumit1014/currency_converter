@@ -1,0 +1,16 @@
+.card{
+    margin:50px;
+    border: 1px solid;
+}
+.card-header{
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+.result{
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+    background-color:cornflowerblue;
+    border-radius: 10px;
+}
